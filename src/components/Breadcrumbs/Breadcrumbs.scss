@@ -1,0 +1,35 @@
+@use '../../index.scss' as *;
+
+.breadcrumb {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	font-size: 14px;
+	gap: 10px;
+	li {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		color: $text-gray;
+		a {
+			text-decoration: none;
+			transition: all 0.5s ease-in-out;
+		}
+		a:hover {
+			text-decoration: underline;
+			color: $text-black;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.breadcrumb {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.breadcrumb {
+		font-size: 10px;
+	}
+}

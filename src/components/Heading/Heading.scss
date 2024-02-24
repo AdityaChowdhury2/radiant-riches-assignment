@@ -1,0 +1,55 @@
+@use '../../index.scss' as *;
+
+.heading {
+	margin-top: 38px;
+	font-size: 3rem;
+	color: $text-black;
+	margin-bottom: 13px;
+	font-weight: 400;
+}
+
+.sub-heading {
+	display: flex;
+	padding: 0.875rem 0;
+	justify-content: space-between;
+	border-bottom: 1px solid #e1e4e6;
+	border-top: 1px solid #e1e4e6;
+	color: $text-gray;
+	font-size: 0.875rem;
+}
+.sub-heading-options {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.sub-heading-option {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	color: #4b5665;
+
+	svg {
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.heading {
+		font-size: 2rem;
+	}
+	.sub-heading {
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.heading {
+		font-size: 1.25rem;
+	}
+	.sub-heading {
+		font-size: 0.4rem;
+		svg {
+			font-size: 12px;
+		}
+	}
+}
