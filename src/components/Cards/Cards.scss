@@ -40,9 +40,10 @@
 				top: 50px;
 				left: -1.3rem;
 				font-size: 1rem;
-				padding: 5px 15px;
+				padding: 2px 13px;
 				line-height: 2;
 				border-radius: 50%;
+				border: 1px solid #e1e4e6;
 			}
 			img {
 				width: 140px;
@@ -167,6 +168,9 @@
 						font-size: 2rem;
 						line-height: 1.5;
 						font-weight: 400;
+					}
+					p {
+						font-size: 14px;
 					}
 				}
 			}

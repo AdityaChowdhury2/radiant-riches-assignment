@@ -32,3 +32,28 @@
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.subscription-section {
+		flex-direction: column;
+		gap: 20px;
+		padding: 0 20px;
+		h3 {
+			font-size: 28px;
+			width: 100%;
+		}
+		.input-container {
+			width: 100%;
+			justify-content: flex-start;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.subscription-section {
+		padding: 0 20px;
+		h3 {
+			font-size: 18px;
+		}
+	}
+}

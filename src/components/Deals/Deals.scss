@@ -80,6 +80,12 @@
 	.deals-container {
 		.deals-card-container {
 			grid-template-columns: repeat(1, minmax(0, 1fr));
+			.deals-card {
+				.header {
+					width: 80%;
+					margin: 0 auto;
+				}
+			}
 		}
 	}
 }

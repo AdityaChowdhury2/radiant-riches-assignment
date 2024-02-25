@@ -1,0 +1,49 @@
+@use '../../index.scss' as *;
+
+.footer {
+	width: 100%;
+	background-color: $background-color;
+	padding: 50px 0 100px;
+	.footer-container {
+		display: flex;
+		gap: 240px;
+		ul {
+			list-style: none;
+			font-size: 14px;
+			li {
+				font-size: 14px;
+				margin-bottom: 15px;
+				color: #b6bdc4;
+			}
+			.footer-header {
+				font-size: 16px;
+				font-weight: 400;
+				color: #fff;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
+		}
+		div {
+			display: flex;
+			align-items: center;
+			color: #b6bdc4;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		padding: 50px 20px 100px;
+		.footer-container {
+			gap: 100px;
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.footer {
+		.footer-container {
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+}
