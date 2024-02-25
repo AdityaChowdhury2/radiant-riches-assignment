@@ -1,3 +1,224 @@
+@use '../../index.scss' as *;
+
 .cards-container {
 	margin: 40px 0;
+
+	.card {
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		border-radius: 12px;
+		background-color: #ffffff;
+		padding: 20px;
+		margin-bottom: 20px;
+		// border-bottom: 1px solid #e1e4e6;
+		.card-start {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			align-items: center;
+			padding: 40px;
+			width: 25%;
+			.badge {
+				position: absolute;
+				top: calc(-34px / 2);
+				left: -0.5rem;
+				background-color: #ff7724;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				color: #fff;
+				font-size: 1rem;
+				padding: 5px 10px;
+				line-height: 1.5;
+				border-radius: 0 8px 8px 0;
+			}
+			.index {
+				position: absolute;
+				background-color: #fff;
+				color: $text-gray-light;
+				top: 50px;
+				left: -1.3rem;
+				font-size: 1rem;
+				padding: 5px 15px;
+				line-height: 2;
+				border-radius: 50%;
+			}
+			img {
+				width: 140px;
+				height: 103px;
+			}
+			.caption {
+				color: #626e79;
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+		.card-middle {
+			width: 50%;
+			font-size: 1rem;
+			line-height: 24px;
+			padding-right: 20px;
+			color: $text-gray-dark;
+			.title {
+			}
+			.offer-badge {
+				color: #074786;
+				background-color: #f2f4f7;
+				padding: 5px;
+				border-radius: 5px;
+				font-size: 13px;
+			}
+
+			.highlights {
+				.highlights-heading {
+					color: $text-black;
+					font-weight: bold;
+					font-size: 1rem;
+					line-height: 24px;
+					margin-top: 4px;
+				}
+				.cdk-highlights-content {
+					margin-left: 1.125rem;
+					background-color: #fff4ed;
+					list-style: none;
+					margin-bottom: 15px;
+					padding: 8px 12px;
+					border-radius: 12px;
+					li {
+						font-size: 15px;
+						line-height: 24px;
+						color: $text-gray-dark;
+						display: flex;
+						gap: 5px;
+						align-items: center;
+						margin-bottom: 10px;
+						.cdk-highlights-rating {
+							color: $primary-color;
+							background-color: #fff;
+							padding: 2px 10px;
+							border-radius: 4px;
+							line-height: 1.5;
+						}
+					}
+				}
+				.cdk-highlights-features-container {
+					p {
+					}
+					.cdk-highlights-features {
+						list-style: none;
+						margin-top: 8px;
+						.cdk-highlights-feature {
+							display: flex;
+							gap: 10px;
+							align-items: center;
+							margin-bottom: 5px;
+							span {
+								background-color: #ebf5ff;
+								padding: 2px 3px;
+								border-radius: 50%;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								svg {
+									color: $primary-color;
+									width: 12px;
+								}
+							}
+						}
+					}
+				}
+				.highlights-content {
+					margin-left: 1.125rem;
+					margin-top: 0.625rem;
+					margin-bottom: 1.25rem;
+				}
+				a {
+					text-decoration: none;
+					color: $primary-color;
+					display: flex;
+					gap: 5px;
+					align-items: center;
+				}
+			}
+		}
+		.card-end {
+			width: 25%;
+			display: flex;
+			flex-direction: column;
+			// padding: 0 20px;
+			gap: 20px;
+			justify-content: space-between;
+			.rating-container {
+				display: flex;
+				justify-content: center;
+				.rating-card {
+					padding: 5px 25px 20px;
+					background-color: #f3f9ff;
+					color: #074786;
+					width: 60%;
+					margin-top: -20px;
+					border-radius: 0 0 12px 12px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 5px;
+					h3 {
+						font-size: 2rem;
+						line-height: 1.5;
+						font-weight: 400;
+					}
+				}
+			}
+
+			button {
+				width: 100%;
+				background-color: $primary-color;
+				color: #fff;
+				font-size: 1rem;
+				line-height: 24px;
+				padding: 10px;
+				border: none;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cards-container {
+		padding: 0 20px;
+		.card {
+			flex-direction: column;
+			.card-start {
+				width: 100%;
+				.badge {
+					font-size: 0.8rem;
+					padding: 5px 10px;
+				}
+			}
+			.card-middle {
+				width: 100%;
+				text-align: justify;
+				padding: 0;
+			}
+			.card-end {
+				width: 100%;
+				margin-top: 5px;
+				.rating-container {
+					display: none;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.cards-container {
+		.card {
+			.card-end {
+				width: 100%;
+			}
+		}
+	}
 }
