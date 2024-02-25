@@ -3,6 +3,7 @@ import Cards from '../../components/Cards/Cards';
 import Deals from '../../components/Deals/Deals';
 import Heading from '../../components/Heading/Heading';
 import Navbar from '../../components/Navbar/Navbar';
+import Subscription from '../../components/Subscription/Subscription';
 import Tools from '../../components/Tools/Tools';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 				<Breadcrumbs />
 				<Cards />
 				<Deals />
+				<Subscription />
 			</main>
 		</div>
 	);
